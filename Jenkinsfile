@@ -1,14 +1,8 @@
-pipeline {
-  stages {
-    stage('build') {
-      steps {
-        sh 'npm install'
-      }
-    }
-    stage('start') {
-      steps {
-        sh 'npm start'
-      }
-    }
+node {
+  stage("stage 1") {
+    echo "Hello"
+  }
+  stage("stage 2") {
+    echo "World!"
   }
 }
